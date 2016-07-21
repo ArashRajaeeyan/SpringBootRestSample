@@ -1,0 +1,7 @@
+curl -i -X POST -H "Content-Type:application/json" -d 'testuser3' http://localhost:8080/user
+
+curl -i -X POST -H "Content-Type:application/json" -d '{"id":"6", "eventType":"e7"}' http://localhost:8080/event
+
+curl  http://localhost:8080/event?sort=eventType
+
+curl -i -X GET -H "Content-Type:application/json" -d '{"size":"2", "page":"2"}' http://localhost:8080/event
